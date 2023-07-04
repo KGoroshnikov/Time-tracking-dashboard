@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="main-grid">
+    <div class="block long">
+      <div class="info-block long-info">
+        <div class="person-holder">
+          <img class="person-icon" src="images/image-jeremy.png" alt="jeremy">
+        </div>
+        <div class="person-info">
+          <p class="info-last">
+            Report for
+          </p>
+          <p class="person-name">
+            Jeremy Robson
+          </p>
+        </div>
+      </div>
+      <div class="stats-menu">
+        <button onclick="loadDaily()" id="daily" class="btn-menu">
+          Daily
+        </button>
+        <button onclick="loadWeekly()" id="weekly" style="color: white;" class="btn-menu">
+          Weekly
+        </button>
+        <button onclick="loadMonthly()" id="monthly" class="btn-menu">
+          Monthly
+        </button>
+      </div>
+    </div>
+    <div class="block orange">
+      <img class="block-img" src="images/icon-work.svg" alt="icon-play">
+      <div class="info-block">
+        <div class="info-head">
+          <p class="info-name">
+            Work
+          </p>
+          <img class="three-dots" src="images/icon-ellipsis.svg" alt="ellipsis">
+        </div>
+        <p id="work-hours" class="info-hours">
+          32hrs
+        </p>
+        <p id="work-last" class="info-last">
+          Last Week - 36hrs
+        </p>
+      </div>
+    </div>
+    <div class="block blue">
+      <img class="block-img" src="images/icon-play.svg" alt="icon-play">
+      <div class="info-block">
+        <div class="info-head">
+          <p class="info-name">
+            Play
+          </p>
+          <img class="three-dots" src="images/icon-ellipsis.svg" alt="ellipsis">
+        </div>
+        <p id="play-hours" class="info-hours">
+          10hrs
+        </p>
+        <p id="play-last" class="info-last">
+          Last Week - 8hrs
+        </p>
+      </div>
+    </div>
+    <div class="block red">
+      <img class="block-img" src="images/icon-study.svg" alt="icon-play">
+      <div class="info-block">
+        <div class="info-head">
+          <p class="info-name">
+            Study
+          </p>
+          <img class="three-dots" src="images/icon-ellipsis.svg" alt="ellipsis">
+        </div>
+        <p id="study-hours" class="info-hours">
+          4hrs
+        </p>
+        <p id="study-last" class="info-last">
+          Last Week - 7hrs
+        </p>
+      </div>
+    </div>
+    <div class="block green">
+      <img class="block-img" src="images/icon-exercise.svg" alt="icon-play">
+      <div class="info-block">
+        <div class="info-head">
+          <p class="info-name">
+            Exercise
+          </p>
+          <img class="three-dots" src="images/icon-ellipsis.svg" alt="ellipsis">
+        </div>
+        <p id="exercise-hours" class="info-hours">
+          4hrs
+        </p>
+        <p id="exercise-last" class="info-last">
+          Last Week - 5hrs
+        </p>
+      </div>
+    </div>
+    <div class="block violet">
+      <img class="block-img" src="images/icon-social.svg" alt="icon-play">
+      <div class="info-block">
+        <div class="info-head">
+          <p class="info-name">
+            Social
+          </p>
+          <img class="three-dots" src="images/icon-ellipsis.svg" alt="ellipsis">
+        </div>
+        <p id="social-hours" class="info-hours">
+          5hrs
+        </p>
+        <p id="social-last" class="info-last">
+          Last Week - 10hrs
+        </p>
+      </div>
+    </div>
+    <div class="block yellow">
+      <img class="block-img" src="images/icon-self-care.svg" alt="icon-play">
+      <div class="info-block">
+        <div class="info-head">
+          <p class="info-name">
+            Self Care
+          </p>
+          <img class="three-dots" src="images/icon-ellipsis.svg" alt="ellipsis">
+        </div>
+        <p id="self-hours" class="info-hours">
+          2hrs
+        </p>
+        <p id="self-last" class="info-last">
+          Last Week - 2hrs
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+  <!--
+  Report for
+  Jeremy Robson
+
+  Daily
+  Weekly
+  Monthly
+-->
+</body>
+</html>
